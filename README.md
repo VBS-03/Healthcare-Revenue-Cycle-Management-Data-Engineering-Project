@@ -6,8 +6,8 @@ This project is a **metadata-driven data engineering solution** tailored for **H
 
 ### Key Highlights:
 1. **Azure Services Utilized for the Project's Implementation:**
-  - **Azure SQL Database:** Stores **EMR (Electronic Medical Record)** data of hospitals
-  - **Azure Data Factory (ADF):** Orchestrates seamless data workflows.
-  - **Azure Databricks:** Performs advanced transformations, data cleansing, and analytics with Unity Catalog for data governance.
-  -** Azure Data Lake Storage Gen2:** Serves as a centralized repository for raw and processed data.
-  - **Azure Key Vault:** Secures sensitive information like connection strings and API keys.
+    - **Azure SQL Database:** Stores **EMR (Electronic Medical Record)** data of hospitals
+    - **Azure Data Factory (ADF):** Orchestrates seamless data workflows.
+    - **Azure Databricks:** Performs advanced transformations, data cleansing, and analytics with Unity Catalog for data governance.
+    - **Azure Data Lake Storage Gen2:** Serves as a centralized repository for raw and processed data.
+    - **Azure Key Vault:** Secures sensitive information like connection strings and API keys.
