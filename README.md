@@ -108,10 +108,10 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 - **CPT Codes Data:** Provided as a flat file, CPT codes were initially stored in the **'landing'** container of **ADLS**.
 - **NPI and ICD Codes Data:** Generated in Databricks by connecting to publicly available **APIs** and directly saved as **Parquet** files in the Bronze container of ADLS.
 
-**Scripts:** 
-1. [EMR_Claims_Data_Generator_Faker_Module](Data_Generator/data_generator_faker_module.py)
-2. [ICD_Code_API_Extract](API_Extracts/ICD_Code_API_Extract.py)
-3. [NPI_API_Extract](API_Extracts/NPI_API_Extract.py)
-4. [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
+    **Scripts:** 
+    1. [EMR_Claims_Data_Generator_Faker_Module](Data_Generator/data_generator_faker_module.py)
+    2. [ICD_Code_API_Extract](API_Extracts/ICD_Code_API_Extract.py)
+    3. [NPI_API_Extract](API_Extracts/NPI_API_Extract.py)
+    4. [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
 
 ### Data Ingestion:
