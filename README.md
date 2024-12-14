@@ -44,7 +44,7 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
     - Patient Collections: Managing outstanding patient balances through billing and collection activities. 
 
 Below are the links to understand more about Healthcare Account Receivable Management:
-[healthcare-accounts-receivable-management]([https://github.com/user-attachments/assets/b7b23b59-4518-4c3a-b7ec-8fe1cc7d1b8c](https://mdmanagementgroup.com/healthcare-accounts-receivable-management/))
+[healthcare-accounts-receivable-management](https://mdmanagementgroup.com/healthcare-accounts-receivable-management/)
 
 
 ## Solution Architecture of the Project
