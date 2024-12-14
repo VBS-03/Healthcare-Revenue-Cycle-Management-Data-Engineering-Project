@@ -112,6 +112,6 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
     * [EMR_Claims_Data_Generator_Faker_Module](Data_Generator/data_generator_faker_module.py)
     * [ICD_Code_API_Extract](API_Extracts/ICD_Code_API_Extract.py)
     * [NPI_API_Extract](API_Extracts/NPI_API_Extract.py)
-    * [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
+    * [CPT_Codes](Datasets/cptcodes/cptcodes.csv)
 
 ### Data Ingestion:
