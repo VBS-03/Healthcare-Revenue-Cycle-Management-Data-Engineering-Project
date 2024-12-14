@@ -42,3 +42,13 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
     - Claims Submission: Electronically submitting claims to insurance companies for payment. 
     - Claims Adjudication and Denial Management: Reviewing claim rejections, identifying reasons for denials, and taking corrective actions to resubmit claims. 
     - Patient Collections: Managing outstanding patient balances through billing and collection activities. 
+
+## Solution Architecture of the Project
+![Flow_Diagram](Flow_Diagram.png)
+
+## ER Diagram
+![ER_Diagram](ER_Diagram.png)
+
+## Implementation Plan
+---
+### Source Data
