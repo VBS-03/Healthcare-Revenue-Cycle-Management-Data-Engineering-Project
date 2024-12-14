@@ -85,7 +85,7 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 - App Registration for Azure Databricks and Azure Data Factory
 - Adding all the secrets to Azure Key Vault
 - Created the Databricks Secret Scope and linked Azure Key Vault to it.
-- Given **'Get/list'** Access to Secrets to the registered applications.
+- Given **'Get/list'** Access to Secrets in Key Vault to the registered applications.
 #### Mounts to ADLS:
 - Get secrets in the notebook using **dbutils.secrets.get**
 - Created mounts to the containers in ADLS **( Landing, Bronze, Silver, Gold, Configs )**
