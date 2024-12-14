@@ -69,14 +69,30 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 | CPT Codes | Landing / CSV |
 | NPI Extract | Bronze / Parquet |
 | ICD Codes | Bronze / Parquet |
-
+| Load Configs | configs / CSV |
 
 **EMR data** comprises of 'Patients', 'Providers', 'Departments', 'Transactions' and 'Encounters' collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables:
 1. **healthcare-rcm-hospital-a**
 2. **healthcare-rcm-hospital-b**
 
+As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load_confgs** for the emr data ingestion is stored in **configs container** in ADLS in the csv format.
+
+**[load_config](Datasets/load_config.csv)**
+
 ### Setup:
-#### Security, Governance and Mounts to ADLS:
+#### Security & Governance:
+- Created Azure Key Vault
+- App Registration for Azure Databricks and Azure Data Factory
+- Adding all the secrets to Azure Key Vault
+- Created the Databricks Secret Scope and linked Azure Key Vault to it.
+- Given **'Get/list'** Access to Secrets to the registered applications.
+  
+#### Mounts to ADLS:
+- Get secrets in the notebook using **dbutils.secrets.get**
+- Created mounts to the containers in ADLS **( Landing, Bronze, Silver, Gold, Configs )**
+
+    **Script** - [Mounts_Creation](1._Set-up/adls_mounts.py)
+#### Unity Catalog setup and Schema creation:
 
 ### Data Collection:
 - **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
@@ -92,4 +108,3 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 4. [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
 
 ### Data Ingestion:
-- 
