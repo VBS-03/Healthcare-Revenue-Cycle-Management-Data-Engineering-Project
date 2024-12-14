@@ -43,7 +43,7 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
     - Claims Adjudication and Denial Management: Reviewing claim rejections, identifying reasons for denials, and taking corrective actions to resubmit claims. 
     - Patient Collections: Managing outstanding patient balances through billing and collection activities. 
 
-Below are the links to understand more about Healthcare Account Receivable Management:
+Here is the links to understand more about Healthcare Account Receivable Management:
 [healthcare-accounts-receivable-management](https://mdmanagementgroup.com/healthcare-accounts-receivable-management/)
 
 
@@ -55,7 +55,7 @@ Below are the links to understand more about Healthcare Account Receivable Manag
 
 ## Implementation Plan
 ---
-### Source Data
+### Source Data:
 We are generated the **EMR data** and **Claims data** using the **Faker Module**. **CPT codes** were provided, **NPI and ICD codes data** were extracted from the **Public APIs**. The various data files along with the file type and source location are mentioned below:
 
 | File Name | Source Location / File Type |  
@@ -74,3 +74,10 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 **EMR data** comprises of 'Patients', 'Providers', 'Departments', 'Transactions' and 'Encounters' collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables:
     - **healthcare-rcm-hospital-a**
     - **healthcare-rcm-hospital-b**
+
+### Data Collection:
+- **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
+- **EMR Data Upload:** EMR data, initially generated in **CSV** format, was uploaded to respective **hospitals' Azure SQL Databases** via **Azure Data Studio.**
+- **Claims Data Handling:** Claims data, generated in **CSV** format, was stored in the **'landing'** container of Azure Data Lake Storage (**ADLS**).
+- **CPT Codes Data:** Provided as a flat file, CPT codes were initially stored in the **'landing'** container of **ADLS**.
+- **NPI and ICD Codes Data:** Generated in Databricks by connecting to publicly available **APIs** and directly saved as **Parquet** files in the Bronze container of ADLS.
