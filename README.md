@@ -66,6 +66,7 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 | NPI Extract | Bronze / Parquet |
 | ICD Codes | Bronze / Parquet |
 
-EMR data comprises of Patients, Providers, Departments, Transactions and Encounters collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables:
-    - **healthcare-rcm-hospital-a**
-    - **healthcare-rcm-hospital-b**
+
+EMR data comprises of Patients, Providers, Departments, Transactions and Encounters collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables :
+    * **healthcare-rcm-hospital-a**
+    * **healthcare-rcm-hospital-b**
