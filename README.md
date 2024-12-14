@@ -84,10 +84,10 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 - **NPI and ICD Codes Data:** Generated in Databricks by connecting to publicly available **APIs** and directly saved as **Parquet** files in the Bronze container of ADLS.
 
 **Scripts** 
-    - [EMR_Claims_Data_Generator_Faker_Module](data_generator_faker_module.py)
-    - [ICD_Code_API_Extract](ICD_Code_API_Extract.py)
-    - [NPI_API_Extract](NPI_API_Extract.py)
-    - [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
+1. [EMR_Claims_Data_Generator_Faker_Module](data_generator_faker_module.py)
+2. [ICD_Code_API_Extract](ICD_Code_API_Extract.py)
+3. [NPI_API_Extract](NPI_API_Extract.py)
+4. [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
 
 ### Data Ingestion:
 - 
