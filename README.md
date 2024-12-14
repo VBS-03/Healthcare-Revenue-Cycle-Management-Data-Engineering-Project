@@ -72,8 +72,8 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 
 
 **EMR data** comprises of 'Patients', 'Providers', 'Departments', 'Transactions' and 'Encounters' collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables:
-    - **healthcare-rcm-hospital-a**
-    - **healthcare-rcm-hospital-b**
+1. **healthcare-rcm-hospital-a**
+2. **healthcare-rcm-hospital-b**
 
 ### Data Collection:
 - **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
