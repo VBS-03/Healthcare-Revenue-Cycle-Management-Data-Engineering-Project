@@ -91,7 +91,7 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 - Get secrets in the notebook using **dbutils.secrets.get**
 - Created mounts to the containers in ADLS **( Landing, Bronze, Silver, Gold, Configs )**
 
-    **Script** - [Mounts_Creation](1._Set-up/adls_mounts.py)
+    **Script** - [Mounts_Creation](1. Set-up/adls_mounts.py)
 #### Unity Catalog setup and Schema creation:
 
 ### Data Collection:
