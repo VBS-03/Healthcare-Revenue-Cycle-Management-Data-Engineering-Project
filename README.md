@@ -43,6 +43,10 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
     - Claims Adjudication and Denial Management: Reviewing claim rejections, identifying reasons for denials, and taking corrective actions to resubmit claims. 
     - Patient Collections: Managing outstanding patient balances through billing and collection activities. 
 
+Below are the links to understand more about Healthcare Account Receivable Management:
+[healthcare-accounts-receivable-management]([https://github.com/user-attachments/assets/b7b23b59-4518-4c3a-b7ec-8fe1cc7d1b8c](https://mdmanagementgroup.com/healthcare-accounts-receivable-management/))
+
+
 ## Solution Architecture of the Project
 ![Flow_Diagram](Flow_Diagram.png)
 
