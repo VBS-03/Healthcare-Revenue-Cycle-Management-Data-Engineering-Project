@@ -53,7 +53,7 @@ Here is the links to understand more about Healthcare Account Receivable Managem
 ## ER Diagram
 ![ER_Diagram](ER_Diagram_1.png)
 
-## Implementation Plan
+## Implementation
 ---
 ### Source Data:
 We are generated the **EMR data** and **Claims data** using the **Faker Module**. **CPT codes** were provided, **NPI and ICD codes data** were extracted from the **Public APIs**. The various data files along with the file type and source location are mentioned below:
@@ -75,9 +75,19 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 1. **healthcare-rcm-hospital-a**
 2. **healthcare-rcm-hospital-b**
 
+
 ### Data Collection:
 - **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
 - **EMR Data Upload:** EMR data, initially generated in **CSV** format, was uploaded to respective **hospitals' Azure SQL Databases** via **Azure Data Studio.**
 - **Claims Data Handling:** Claims data, generated in **CSV** format, was stored in the **'landing'** container of Azure Data Lake Storage (**ADLS**).
 - **CPT Codes Data:** Provided as a flat file, CPT codes were initially stored in the **'landing'** container of **ADLS**.
 - **NPI and ICD Codes Data:** Generated in Databricks by connecting to publicly available **APIs** and directly saved as **Parquet** files in the Bronze container of ADLS.
+
+**Scripts** 
+    - [EMR_Claims_Data_Generator_Faker_Module](data_generator_faker_module.py)
+    - [ICD_Code_API_Extract](ICD_Code_API_Extract.py)
+    - [NPI_API_Extract](NPI_API_Extract.py)
+    - [cpt_codes.csv](Datasets/cptcodes/cptcodes.csv)
+
+### Data Ingestion:
+- 
