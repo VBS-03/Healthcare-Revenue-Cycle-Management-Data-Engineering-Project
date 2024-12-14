@@ -30,4 +30,15 @@ This project is a **metadata-driven data engineering solution** tailored for **H
 - **Scalable and Secure** : Leverages Azure's robust infrastructure for high performance and data security.
 - **Automated and Adaptable** : Reduces manual efforts and allows quick adaptation to new requirements.
 
-  
+
+## Overview of Healthcare Revenue Cycle Managememt (RCM):
+**Healthcare Revenue Cycle Management (RCM)** refers to the comprehensive process within a healthcare organization that tracks and manages all financial transactions related to patient care, from the initial appointment scheduling to the final payment collection, ensuring accurate billing and timely receipt of revenue for services rendered; it involves a series of coordinated steps including patient registration, insurance verification, charge capture, claims submission, coding, denial management, and patient collections, aiming to optimize revenue while minimizing administrative burdens and maximizing operational efficiency.
+### Purpose:
+To streamline the billing process, reduce claim denials, accelerate payment collection, and maximize the healthcare provider's financial viability. 
+### Key Stages:
+    - **Patient Registration and Eligibility Verification**: Gathering patient demographics, insurance information, and verifying coverage eligibility. 
+    - **Charge Capture:** Recording all services provided to the patient, including procedure codes and charges. 
+    - **Coding:** Assigning accurate medical codes to patient services to ensure proper billing. 
+    - **Claims Submission:** Electronically submitting claims to insurance companies for payment. 
+    - **Claims Adjudication and Denial Management:** Reviewing claim rejections, identifying reasons for denials, and taking corrective actions to resubmit claims. 
+    - **Patient Collections:** Managing outstanding patient balances through billing and collection activities. 
