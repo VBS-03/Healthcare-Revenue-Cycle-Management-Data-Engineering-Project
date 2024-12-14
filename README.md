@@ -47,7 +47,7 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
 ![Flow_Diagram](Flow_Diagram.png)
 
 ## ER Diagram
-![Er_Diagram](ER_Diagram.png)
+![ER_Diagram](ER_Diagram_1.png)
 
 ## Implementation Plan
 ---
