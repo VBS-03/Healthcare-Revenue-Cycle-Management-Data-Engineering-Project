@@ -52,7 +52,7 @@ To streamline the billing process, reduce claim denials, accelerate payment coll
 ## Implementation Plan
 ---
 ### Source Data
-We are generated the **EMR data** and **Claims data** using the **Faker Module**. **CPT codes** were provided, **NPI and ICD codes data** were extracted from the **Public APIs **. The various data files along with the file type and source location are mentioned below:
+We are generated the **EMR data** and **Claims data** using the **Faker Module**. **CPT codes** were provided, **NPI and ICD codes data** were extracted from the **Public APIs**. The various data files along with the file type and source location are mentioned below:
 
 | File Name | Source Location / File Type |  
 |-----------|-----------------------------|
@@ -67,6 +67,6 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 | ICD Codes | Bronze / Parquet |
 
 
-EMR data comprises of Patients, Providers, Departments, Transactions and Encounters collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables :
-    * **healthcare-rcm-hospital-a**
-    * **healthcare-rcm-hospital-b**
+**EMR data** comprises of 'Patients', 'Providers', 'Departments', 'Transactions' and 'Encounters' collectively and each of the following hosptipal's Azure SQL Databases have there own separate EMR datasets in the tables:
+    - **healthcare-rcm-hospital-a**
+    - **healthcare-rcm-hospital-b**
