@@ -75,6 +75,8 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 1. **healthcare-rcm-hospital-a**
 2. **healthcare-rcm-hospital-b**
 
+### Setup:
+#### Security, Governance and Mounts to ADLS:
 
 ### Data Collection:
 - **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
@@ -83,7 +85,7 @@ We are generated the **EMR data** and **Claims data** using the **Faker Module**
 - **CPT Codes Data:** Provided as a flat file, CPT codes were initially stored in the **'landing'** container of **ADLS**.
 - **NPI and ICD Codes Data:** Generated in Databricks by connecting to publicly available **APIs** and directly saved as **Parquet** files in the Bronze container of ADLS.
 
-**Scripts** 
+**Scripts:** 
 1. [EMR_Claims_Data_Generator_Faker_Module](data_generator_faker_module.py)
 2. [ICD_Code_API_Extract](ICD_Code_API_Extract.py)
 3. [NPI_API_Extract](NPI_API_Extract.py)
