@@ -98,8 +98,8 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 - All Delta tables are housed within their respective schemas under Unity Catalog.
 
     **Scripts:**
-      * [Schemas](Set_up/Schemas.py)
-      * [Audit_ddl](Set_up/audit_ddl.py)
+      >[Schemas](Set_up/Schemas.py)
+      >[Audit_ddl](Set_up/audit_ddl.py)
   
 ### Data Collection:
 - **EMR and Claims Data Generation:** EMR data and claims data were simulated using the **Faker module** in Azure Databricks.
