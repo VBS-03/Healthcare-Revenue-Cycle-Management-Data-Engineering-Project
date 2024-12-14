@@ -1,8 +1,6 @@
 # Healthcare Revenue Cycle Management Data Engineering Project
 Healthcare Revenue Cycle Management End-to-End Data Engineering Project on Azure
-
-![revenue-cycle-management](revenue-cycle-management-medical-billing-health-care-service.png)
-
+![Revenue-cycle-reimbursement](Revenue-cycle-reimbursement-flow-chart.jpg)
 ## Project Overview:
 This project is a **metadata-driven data engineering solution** tailored for **Healthcare Revenue Cycle Management (RCM)**. Built on **Microsoft Azure**, the pipeline is designed to automate and optimize data ingestion, transformation, and historical data management processes while ensuring scalability and security.
 
