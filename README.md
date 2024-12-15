@@ -154,6 +154,9 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
         ![pip4](pip4.png)
         ![pip5](pip5.png)
 
+    **Scripts:**
+        * [Bronze](Bronze)
+    
 ### Data movement from Bronze to Silver:
 In this section we have made the following implementation in the Azure Databricks:
 - **Transformations** were applied to the data files.
@@ -178,9 +181,15 @@ In this section we have made the following implementation in the Azure Databrick
 | NPI Extract | SCD2 Implemented |
 | ICD Codes | SCD2 Implemented |
 
+**Scripts:**
+    * [Silver](Silver)
+
 ### Data movement from Silver to Gold:
 - **Final aggregation and transformations** were applied.
 - **Dimension and Fact tables** were created in the Delta Lake based on the Data model requirement.
+
+**Scripts:**
+    * [Gold](Gold)
 
 ### ADF End-to-End Pipeline:
 - Below are the pipelines created and there components to automate the entire process starting from **[data generation -> data ingestion -> data transformation and aggregation -> data load to Delta Lake Tables]**
