@@ -139,3 +139,17 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
     11. First a lookup activity will see the load_log table in delta lake to see the last_fetched_date based on the following query -
 
         **@concat('select coalesce(cast(max(loaddate) as date),''','1900-01-01',''') as last_fetched_date from healthcare_rcm_catalog.audit.load_logs where',' data_source=''',item().datasource,''' and                         tablename=''',item().tablename,'''')**
+    12. Based on the last_fetched_date the incremental load will be initiated based on the following query -
+ 
+        **Source:**
+        **@concat('select *,''',item().datasource,''' as datasource from ',item().tablename,' where ',item().watermark,' >= ''',activity('Fetch_Logs_Audit_Table').output.firstRow.last_fetched_date,'''')***
+
+    13. After loading the data into bronze layer, load_logs table will be updated:
+
+        **@concat('insert into healthcare_rcm_catalog.audit.load_logs(data_source,tablename,numberofrowscopied,watermarkcolumnname,loaddate) values (''',item().datasource,''',                                                 ''',item().tablename,''',''',activity('Incremental_Load_CP').output.rowscopied,''',''',item().watermark,''',''',utcNow(),''')')**
+    14. The 3rd if condition activity is there in the pipeline to check the condition **is_active** in the load_configs for the data load.
+    15. If the **is_active = 1** then the loading will be initiated based on the load_type = full or incremental.
+    16. For this implementation, in the True section of the if_condition activity **(@equals(item().is_active,'1'))** there is an execute pipeline activity which will trigger a pipeline holding the below if              condition activity similar to the Full and incremental load if condition activity explained between point 8-13.
+        
+        ![pip4](pip4.png)
+        ![pip5](pip5.png)
