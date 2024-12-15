@@ -156,11 +156,11 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 
 ### Data movement from Bronze to Silver:
 In this section we have made the following implementation in the Azure Databricks:
-    - Transformations were applied to the data files.
-    - Comman Data Model (CDM) has been implemented.
-    - SCD2 implementation has been made to support incremental load without loosing the history of data.
-    - Quality check was has integrated to quarantine the unhealthy data.
-    - All the data were stored in the Delta Lakes in databricks which helped us to achieve the below requirememts:
-        - Ability to delete individual records.
-        - Ability to see history and time travel.
-        - Ability to roll back to a previous version.
+- Transformations were applied to the data files.
+- Comman Data Model (CDM) has been implemented.
+- SCD2 implementation has been made to support incremental load without loosing the history of data.
+- Quality check was has integrated to quarantine the unhealthy data.
+- All the data were stored in the Delta Lakes in databricks which helped us to achieve the below requirememts:
+    - Ability to delete individual records.
+    - Ability to see history and time travel.
+    - Ability to roll back to a previous version.
