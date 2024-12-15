@@ -156,11 +156,27 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 
 ### Data movement from Bronze to Silver:
 In this section we have made the following implementation in the Azure Databricks:
-- Transformations were applied to the data files.
-- Comman Data Model (CDM) has been implemented.
-- SCD2 implementation has been made to support incremental load without loosing the history of data.
-- Quality check was has integrated to quarantine the unhealthy data.
-- All the data were stored in the Delta Lakes in databricks which helped us to achieve the below requirememts:
+- **Transformations** were applied to the data files.
+- **Comman Data Model (CDM)** has been implemented.
+- **SCD2** implementation has been made to support incremental load without loosing the history of data.
+- **Quality check** was has integrated to **quarantine** the unhealthy data.
+- All the data were stored in the **Delta Lakes** in databricks which helped us to achieve the below requirememts:
     - Ability to delete individual records.
     - Ability to see history and time travel.
     - Ability to roll back to a previous version.
+
+### Data movement from Silver to Gold:
+- **Final aggregation and transformations** were applied.
+- **Dimension and Fact tables** were created in the Delta Lake based on the Data model requirement.
+
+### ADF End-to-End Pipeline:
+- Below are the pipelines created and there components to automate the entire process starting from **[data generation -> data ingestion -> data transformation and aggregation -> data load to Delta Lake Tables]**
+    1. **pip_src_to_bronze**
+
+        ![pip1](pip1.png)
+
+       ![pip3](pip3.png)
+
+       ![pip4](pip4.png)
+
+       ![pip5](pip5.png)
