@@ -180,11 +180,12 @@ In this section we have made the following implementation in the Azure Databrick
     - Inside the execute pipeline activity - ![pip5](pip5.png)
 
     2. **pip_bronze_silver** - Each individual notebooks are present for data movement form bronze to silver that are independent of each other.
-            ![pip6](pip6.png)
 
-    3. **pip_silver_gold** - Each individual notebooks are present for data movement form silver to gold that are independent of each other.
+       ![pip6](pip6.png)
+
+    4. **pip_silver_gold** - Each individual notebooks are present for data movement form silver to gold that are independent of each other.
 
           ![pip7](pip7.png)
 
-    4. **pip_hc_emr_end_to_end** - Main pipeline containing all the individual pipelines created above. This pipeline will be the parent pipeline and will be the one triggerred to intiate the complete data                                          engineering process.
+    5. **pip_hc_emr_end_to_end** - Main pipeline containing all the individual pipelines created above. This pipeline will be the parent pipeline and will be the one triggerred to intiate the complete data                                          engineering process.
        ![pip8](pip8.png)             
