@@ -164,6 +164,19 @@ In this section we have made the following implementation in the Azure Databrick
     - Ability to delete individual records.
     - Ability to see history and time travel.
     - Ability to roll back to a previous version.
+- Following is the list of SCD2 implemention on the dataset:
+  
+| Dataset | SCD2 Implementation/ Full Load |  
+|---------|--------------------------------|
+| Patients | SCD2 Implemented |
+| Providers	| Full Load |
+| Departments | Full Load |
+| Transactions | SCD2 Implemented |
+| Encounters | SCD2 Implemented |
+| Claims | SCD2 Implemented |
+| CPT Codes | SCD2 Implemented|
+| NPI Extract | SCD2 Implemented |
+| ICD Codes | SCD2 Implemented |
 
 ### Data movement from Silver to Gold:
 - **Final aggregation and transformations** were applied.
@@ -212,6 +225,7 @@ By integrating cutting-edge Azure technologies and implementing a metadata-drive
 - Metadata driven approach
 - Full and Incremental Load support
 - Common Data Model(CDM) implementation
+- Surrogate Key implementation
 - Quality Check [Quarantine erroneous data] control
 - SCD2 implementation
 - Version control
