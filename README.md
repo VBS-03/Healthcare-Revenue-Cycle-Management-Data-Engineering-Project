@@ -120,7 +120,15 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
 - Respective datasets have been created in ADF.
 - **EMR, Claims and CPT codes** data have been ingested and brought to bronze layer using the ADF pipeline:
     1. A lookup activity to read the load_configs file.
-    2. For_each activity to iterate over each value in the load_configs file and do the processing for each entries.
+    2. ForEach activity to iterate over each value in the load_configs file and do the processing for each entries.
     3. Databricks notebook has been included as an independent activities to ingest and bring claims and cpt_codes data from landing to bronze layer in parquet format.
 
        ![pip1](pip1.png)
+    4. Inside ForEach activity, the follwoing activities are present;
+
+       ![pip3](pip3.png)
+    5. Get Metadata activities for each entries check whether the file is present in the bronze container or not.
+    6. If the file Exists, then the True section of the If condition activity will execute, then it will copy the existing file to the archive folder in the bronze layer.
+    7. If not exists, do nothing.
+    8. Next, is the if condition activity where if the **@equals(item().loadtype, 'Full')** then it will copy the data to the bronze container in parquet format based on the query given below:
+           **@concat('Select *,''', item().datasource,''' as datasource from ', item().tablename)**
