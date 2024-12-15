@@ -115,3 +115,12 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
     * [CPT_Codes](Datasets/cptcodes/cptcodes.csv)
 
 ### Data Ingestion:
+- Linked services has been created to the respective azure services to integrate data movement from source to target.
+  ![Linked_services](Linked_services.png)
+- Respective datasets have been created in ADF.
+- **EMR, Claims and CPT codes** data have been ingested and brought to bronze layer using the ADF pipeline:
+    1. A lookup activity to read the load_configs file.
+    2. For_each activity to iterate over each value in the load_configs file and do the processing for each entries.
+    3. Databricks notebook has been included as an independent activities to ingest and bring claims and cpt_codes data from landing to bronze layer in parquet format.
+
+       ![pip1](pip1.png)
