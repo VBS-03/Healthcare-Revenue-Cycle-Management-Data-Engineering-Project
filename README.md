@@ -175,8 +175,9 @@ In this section we have made the following implementation in the Azure Databrick
 
         ![pip1](pip1.png)
 
+      Inside ForEach Activity
        ![pip3](pip3.png)
-
+      Inside If_Condition_Is_Active_Flag_check
        ![pip4](pip4.png)
-
+      Inside the execute pipeline activity
        ![pip5](pip5.png)
