@@ -130,5 +130,6 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
     5. Get Metadata activities for each entries check whether the file is present in the bronze container or not.
     6. If the file Exists, then the True section of the If condition activity will execute, then it will copy the existing file to the archive folder in the bronze layer.
     7. If not exists, do nothing.
-    8. Next, is the if condition activity where if the **@equals(item().loadtype, 'Full')** then it will copy the data to the bronze container in parquet format based on the query given below:
-           **@concat('Select *,''', item().datasource,''' as datasource from ', item().tablename)**
+    8. Next, is the if condition activity where if the **@equals(item().loadtype, 'Full')** then it will copy the data to the bronze container in parquet format based on the query given below-
+
+       **@concat('Select *,''', item().datasource,''' as datasource from ', item().tablename)***
