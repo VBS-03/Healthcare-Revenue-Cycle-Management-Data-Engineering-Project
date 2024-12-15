@@ -206,3 +206,29 @@ This end-to-end data engineering pipeline provides a comprehensive solution for 
 - **Timely Payments:** Ensures providers and staff receive payments on time, fostering organizational stability and satisfaction.
 
 By integrating cutting-edge Azure technologies and implementing a metadata-driven approach, this project empowers healthcare organizations to improve financial outcomes, ensure compliance, and ultimately deliver better healthcare services to their patients.
+
+## Key Implementation Summary:
+- Sourcing data from API
+- Metadata driven approach
+- Full and Incremental Load support
+- Common Data Model(CDM) implementation
+- Quality Check [Quarantine erroneous data] control
+- SCD2 implementation
+- Version control
+- Data modelling
+  
+## Technologie/Services Summary: 
+- Pyspark
+- Python
+- Spark SQL
+- Azure Databricks
+- Azure Data Factory
+- Azure SQL Database
+- Azure Date Lake Storage Gen2
+- Delta Lake
+- Unity Catalog
+- Azure Key Vault
+- Azure Data Studio
+
+## Credits
+This project was inspired by End to End Azure Data Engineering Project created by **Sumit Mittal** on Youtube.
