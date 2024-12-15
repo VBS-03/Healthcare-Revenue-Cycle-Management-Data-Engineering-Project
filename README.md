@@ -133,3 +133,9 @@ As mentioned, our pipeline will be a metadata driven pipeline, hence, the **load
     8. Next, is the if condition activity where if the **@equals(item().loadtype, 'Full')** then it will copy the data to the bronze container in parquet format based on the query given below-
 
        **@concat('Select *,''', item().datasource,''' as datasource from ', item().tablename)***
+    
+    9. Thereafter update the load_logs table in the databricks datalake.
+    10. If the load_type != 'Full' i.e., the **False** condition of the IF condition will execute where the load_type = incremental will be taken into consideration.
+    11. First a lookup activity will see the load_log table in delta lake to see the last_fetched_date based on the following query -
+
+        **@concat('select coalesce(cast(max(loaddate) as date),''','1900-01-01',''') as last_fetched_date from healthcare_rcm_catalog.audit.load_logs where',' data_source=''',item().datasource,''' and                         tablename=''',item().tablename,'''')**
