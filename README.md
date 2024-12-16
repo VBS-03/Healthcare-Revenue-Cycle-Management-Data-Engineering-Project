@@ -247,7 +247,7 @@ By integrating cutting-edge Azure technologies and implementing a metadata-drive
 - Azure Databricks
 - Azure Data Factory
 - Azure SQL Database
-- Azure Date Lake Storage Gen2
+- Azure Data Lake Storage Gen2
 - Delta Lake
 - Unity Catalog
 - Azure Key Vault
